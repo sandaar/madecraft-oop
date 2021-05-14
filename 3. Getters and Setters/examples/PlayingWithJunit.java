@@ -1,12 +1,13 @@
 package examples;
-import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class PlayingWithJunit {
 
-	@Test
-	void testName() throws Exception {
-		assertEquals(4, Calculator.add(2,2));
-	}
+  @Test
+  void testName() {
+    assertEquals(4, NewCalculator.add(2, 2));
+  }
 }

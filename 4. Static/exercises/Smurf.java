@@ -3,8 +3,15 @@ package exercises;
 public class Smurf {
 
 	private String name;
+	private static Smurf papa;
 
 	public static Smurf createSmurf(String name) {
+		if (name == "papa") {
+			if (Smurf.papa== null) {
+				Smurf.papa = new Smurf(name);
+			}
+			return Smurf.papa;
+		}
 		System.out.println("Creating " + name + " Smurf");
 		return new Smurf(name);
 	}
